@@ -1,10 +1,10 @@
 #Generate docker image
 
-docker build -t SENTRON_PAC5200_2InfluxDB -f Dockerfile .
+docker build -t sentron_pac5200_2influxdb -f Dockerfile .
 
 ##Run image with config
 
-docker run -it --rm -e SENTRON_IP=127.0.0.1 -e SENTRON_ID=ID -e INFLUXDB_IP=127.0.0.1 -e INFLUXDB_DATABASE=base -e INFLUXDB_USERNAME=name -e INFLUXDB_PASSWORD=pass SENTRON_PAC5200_2InfluxDB:latest 
+docker run -it --rm -e SENTRON_IP=127.0.0.1 -e SENTRON_ID=ID -e INFLUXDB_IP=127.0.0.1 -e INFLUXDB_DATABASE=base -e INFLUXDB_USERNAME=name -e INFLUXDB_PASSWORD=pass sentron_pac5200_2influxdb:latest 
 
 ##Available config values and image defaults
 
